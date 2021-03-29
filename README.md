@@ -25,7 +25,7 @@ As we know pytorch does not come with CV operators like nms, roi_align etc. We n
 ```shell
 mkdir build
 cd build
-cmake ..
+cmake .. -DCMAKE_PREFIX_PATH=path_to_libtorch -DCMAKE_PREFIX_PATH=path_to_opencv
 cmake --build . --config Release --parallel 8
 ```
 
